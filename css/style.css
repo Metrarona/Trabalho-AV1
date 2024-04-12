@@ -20,20 +20,34 @@ main > div {
   text-align: center;
 }
 
-.display-Bravo {
+.display_Bravo {
   background-color: #bebcbc;
-  padding: 19px;
-  color: black
+  padding: 19px ;
+  color: black;
+  display: flex;
+  gap: 2px;
+  margin: 5px;
+
+  
 }
 
-.Numeros-Alfa,
-.Operaçoes-India {
+.display_Tango {
+  background-color: #bebcbc;
+  padding: 19px;
+  color: black;
+  display: flex;
+  gap: 2px;
+  margin: 5px;
+}
+
+.Numeros_Alfa,
+.Operaçoes_India {
   display: flex;
   gap: 2px;
   margin-top: 5px;
 }
 
-.Numeros-Alfa > div {
+.Numeros_Alfa > div {
   padding: 10px 15px;
   font-size: 18px;
   background-color: #27abcc;
@@ -42,7 +56,7 @@ main > div {
   border-radius: 10%;
 }
 
-.Operaçoes-India > div {
+.Operaçoes_India > div {
   padding: 10px 15px;
   font-size: 18px;
   background-color: #27abcc;
