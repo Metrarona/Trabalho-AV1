@@ -5,6 +5,10 @@ body {
   font-style: normal;
   max-width: 100%;
   background-color: #021597;
+  background-image: url(/img/igor-freitas-mesa.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 
 main {
@@ -20,34 +24,27 @@ main > div {
   text-align: center;
 }
 
-.display_Bravo {
+.display_delta {
   background-color: #bebcbc;
   padding: 19px ;
   color: black;
   display: flex;
+  font-size: 29.1px;
   gap: 2px;
-  margin: 5px;
+  margin-top: 2px;
 
-  
 }
 
-.display_Tango {
-  background-color: #bebcbc;
-  padding: 19px;
-  color: black;
+
+
+.numbers_november,
+.operations_oscar {
   display: flex;
   gap: 2px;
-  margin: 5px;
+  margin-top: 10px;
 }
 
-.Numeros_Alfa,
-.Operaçoes_India {
-  display: flex;
-  gap: 2px;
-  margin-top: 5px;
-}
-
-.Numeros_Alfa > div {
+.numbers_november > div {
   padding: 10px 15px;
   font-size: 18px;
   background-color: #27abcc;
@@ -56,7 +53,7 @@ main > div {
   border-radius: 10%;
 }
 
-.Operaçoes_India > div {
+.operations_oscar > div {
   padding: 10px 15px;
   font-size: 18px;
   background-color: #27abcc;
