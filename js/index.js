@@ -13,11 +13,9 @@ numbers.forEach((number) => {
 
 operations.forEach( (op) => {
   op.addEventListener("click", () => {
-    if(operation === null){
-      display.textContent += op.textContent;
-      if(operation !== "="){
-        operation = op.textContent;
-      }
+    display.textContent += op.textContent;
+    if(op.textContent !== "="){
+      operation = op.textContent;
     }
   }) 
 })
@@ -59,3 +57,47 @@ document.getElementById("clear")
   display.textContent = "0";
   operation = null;
 })
+
+//Tabuada
+
+function gerarTabuada(numero, operaçao){
+  let tabuada = '';
+  for(let i = 1; i <= 10; i++) {
+    switch (operaçao){
+      case '+':
+        tabuada += `${numero} + ${i} = ${numero + i}\n`;
+        break;
+
+        case '-':
+          tabuada += `${numero} - ${i} = ${numero - i}\n`;
+          break;
+        
+        case '*':
+          tabuada += `${numero} * ${i} = ${numero * i}\n`;
+          break;  
+        
+        case '/':
+          tabuada += `${numero} / ${i} = ${numero / i}\n`;
+          break
+            
+        
+          
+    }
+
+  }
+console.log(tabuada);
+
+  display.textContent = tabuada;
+}
+
+//Botão gerar tabuada
+
+document.getElementById("TabuadaBtn")
+  .addEventListener('click', () =>{
+    let operationIndice = display.textContent.indexOf(operation);
+    let firstNumber = display.textContent.substring(0, operationIndice);
+
+    gerarTabuada(firstNumber, operation);
+  })
+
+
