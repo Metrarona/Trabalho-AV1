@@ -101,3 +101,16 @@ document.getElementById("TabuadaBtn")
   })
 
 
+//service-worker
+
+if ('serviceWorker' in navigator){
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/js/service-worker.js').then(function(registration){
+      //O registro foi bem-sucedido
+      console.log('ServiceWorker resgistro bem-sucedido com scope:', registration.scope);
+    },function(err) {
+      //O registro falhou :(
+      console.log('ServiceWorke registro falhou', err);  
+    });
+  });
+}
