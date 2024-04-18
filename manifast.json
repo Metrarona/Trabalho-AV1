@@ -5,12 +5,12 @@
         {
             "src": "icone-192x192.png",
             "sizes": "192x192",
-            "type": "image/png"
+            "type": "img/png"
         },
         {
            "src":"icone-512x512.png",
            "sizes":"512x512",
-           "type":"image/png" 
+           "type":"img/png" 
         }
     ],
     "start_url":"/index.html",
